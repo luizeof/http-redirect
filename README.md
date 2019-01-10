@@ -1,6 +1,6 @@
 # HTTP redirect
 
-Inpired by `ianneub/redirect`.
+Inspired by `ianneub/redirect`.
 
 This docker image redirect all HTTP requests on port 80 to the root path specified in the `REDIRECT` environment variable with 301 Http status.
 
