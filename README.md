@@ -11,12 +11,12 @@ The ENV `REDIRECT` need to be populated with entire URI will be sent to the redi
 ```
 bash docker run -d \
  -P \
- -e REDIRECT="https://luizeof.com.br" \
- -e VIRTUAL_HOST="www.luizeof.com.br" \
+ -e VIRTUAL_HOST="www.luizeof.com" \
+ -e REDIRECT="https://luizeof.com" \
  --restart=always \
- ianneub/redirect
+ luizeof/http-redirect
 ```
 
-This will redirect all traffic from `www.luizeof.com.br` to `https://luizeof.com.br/`.
+This will redirect all traffic from `www.luizeof.com` to `https://luizeof.com`.
 
 This image also works with SSL on nginx-proxy-companion or some load balancer like traefik.
